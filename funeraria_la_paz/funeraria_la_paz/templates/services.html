@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block title %}Servicios{% endblock %}{% block content %}<h1>Servicios</h1><p class="lead">Opciones de atención para diferentes necesidades.</p><div class="cards">{% for s in services %}<article><h3>{{s.name}}</h3><p>{{s.description}}</p><strong>{{s.price}}</strong></article>{% endfor %}</div>{% endblock %}
